@@ -12,7 +12,7 @@ async function createCharacter(input) {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      input: text.value
+      text: input.value
     })
   });
 
