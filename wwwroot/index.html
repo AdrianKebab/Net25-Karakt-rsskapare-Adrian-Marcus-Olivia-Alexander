@@ -11,24 +11,72 @@
 
 <body>
 
-    <main>
-        <h1>Characther Creator</h1>
+    <main class="container">
+        <section class="creator">
 
-        <p>Beskriv karaktären du vill skapa...</p>
+            <h1>Characther creator</h1>
 
-         <textarea
-            id="character-prompt"
-            placeholder="Exempel: Jag vill ha en äventyrlig och nyfiken anka som ofta hamnar i trubbel..."
-        ></textarea>
+            <p>beskriv karaktären du vill skapa...</p>
 
-        <button id="create-characther">
-            Skapa karaktär
-        </button>
+            <textarea
+            id="characther-prompt"
+            placeholder="Exempel Jag vill ha en äventyrlig lösningnsorienterad ninja med 18 svärd"
+            ></textarea>
+
+            <button id="create-characther">
+                Skapa karaktär
+            </button>
+        
+        </section>
+
+        <section class="characther-card">
+            <div class="characther-header">
+                <h2 id="characther-name">
+                    Din karaktär
+                </h2>
+                <p id="characther-job">
+                    Klass / Yrke
+                </p>
+            </div>
+
+            <div class="characther-section">
+                <h3> Färdigheter</h3>
+
+                <ul id="characther-skills">
+                    <li>Färdigheter vissas här</li>
+                </ul>
+            </div>
+
+
+            <div class="characther-section">
+                <h3>Utrustning</h3>
+
+                <ul id="characther-equipment">
+                    <li>Utrustning visas här</li>
+                </ul>
+            </div>
+
+
+            <div class="character-section">
+
+                <h3>Bakgrund</h3>
+
+                <p id="character-story">
+                    Bakgrundshistorien för din karaktär kommer att visas här.
+                </p>
+
+            </div>
+
+
+            <button id="print-character">
+                Skriv ut
+            </button>
+
+
+
+        </section>
     </main>
 
-    <script src="script.js">
-        
-    </script>
 
 </body>
 
