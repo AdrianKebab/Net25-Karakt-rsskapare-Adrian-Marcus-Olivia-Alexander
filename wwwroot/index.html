@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Character Creator</title>
+
     <link rel="stylesheet" href="styles.css">
     <script defer src="index.js"></script>
 </head>
@@ -12,48 +14,70 @@
 <body>
 
     <main class="container">
+
         <section class="creator">
 
-            <h1>Characther creator</h1>
+            <h1>Character Creator</h1>
 
-            <p>beskriv karaktären du vill skapa...</p>
+            <p>Beskriv karaktären du vill skapa...</p>
 
             <textarea
-            id="characther-prompt"
-            placeholder="Exempel Jag vill ha en äventyrlig lösningnsorienterad ninja med 18 svärd"
+                id="character-prompt"
+                placeholder="Exempel: Jag vill ha en äventyrlig och lösningsorienterad ninja med 18 svärd"
             ></textarea>
 
-            <button id="create-characther">
+            <button id="create-character">
                 Skapa karaktär
             </button>
-        
+
         </section>
 
-        <section class="characther-card">
-            <div class="characther-header">
-                <h2 id="characther-name">
+
+        <section class="character-card">
+
+            <div class="character-image">
+
+                <img
+    id="character-image"
+    src="images/kalle.jpg"
+    alt="Karaktärsporträtt"
+>
+
+            </div>
+
+
+            <div class="character-header">
+
+                <h2 id="character-name">
                     Din karaktär
                 </h2>
-                <p id="characther-job">
+
+                <p id="character-job">
                     Klass / Yrke
                 </p>
+
             </div>
 
-            <div class="characther-section">
-                <h3> Färdigheter</h3>
 
-                <ul id="characther-skills">
-                    <li>Färdigheter vissas här</li>
+            <div class="character-section">
+
+                <h3>Färdigheter</h3>
+
+                <ul id="character-skills">
+                    <li>Färdigheter visas här</li>
                 </ul>
+
             </div>
 
 
-            <div class="characther-section">
+            <div class="character-section">
+
                 <h3>Utrustning</h3>
 
-                <ul id="characther-equipment">
+                <ul id="character-equipment">
                     <li>Utrustning visas här</li>
                 </ul>
+
             </div>
 
 
@@ -72,11 +96,9 @@
                 Skriv ut
             </button>
 
-
-
         </section>
-    </main>
 
+    </main>
 
 </body>
 
